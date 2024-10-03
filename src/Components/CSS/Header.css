@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .header-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-buttons button {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: #6200ea;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #5a00d1;
+  }
+  
+  .header-controls input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .header h1 {
+      font-size: 20px;
+    }
+  
+    .filter-buttons button {
+      padding: 8px;
+    }
+  
+    .header-controls input {
+      width: 60%;
+    }
+  }
