@@ -1,51 +1,98 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Added spacing between elements */
+}
+
+.filter-buttons button {
+  margin: 0;
+  padding: 12px 16px;
+  margin: 5px;
+  border: none;
+  background-color: #6200ea;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
   
+}
+
+.filter-buttons button:hover {
+  background-color: #5a00d1;
+  transform: scale(1.05); /* Added subtle zoom effect on hover */
+}
+
+.header-controls input {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  width: 250px;
+  font-size: 14px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.header-controls input:focus {
+  border-color: #6200ea;
+  outline: none;
+}
+
+@media (max-width: 900px) {
   .header h1 {
     font-size: 24px;
-    color: #333;
   }
-  
-  .header-controls {
-    display: flex;
-    align-items: center;
-  }
-  
+
   .filter-buttons button {
-    margin: 0 5px;
-    padding: 10px;
-    border: none;
-    background-color: #6200ea;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 12px;
+    font-size: 12px;
   }
-  
-  .filter-buttons button:hover {
-    background-color: #5a00d1;
-  }
-  
+
   .header-controls input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-left: 10px;
+    width: 200px;
   }
-  
-  @media (max-width: 600px) {
-    .header h1 {
-      font-size: 20px;
-    }
-  
-    .filter-buttons button {
-      padding: 8px;
-    }
-  
-    .header-controls input {
-      width: 60%;
-    }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .header-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-buttons button {
+    padding: 8px 10px;
+    font-size: 12px;
+    width: 100%; /* Makes buttons fill the available space on smaller screens */
+  }
+
+  .header-controls input {
+    width: 100%;
+  }
+}

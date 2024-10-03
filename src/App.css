@@ -26,18 +26,33 @@ body {
   border-radius: 5px;
 }
 
+.no-tasks-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #666; 
+  height: 100vh; 
+  margin: 0; 
+  text-align: center; 
+}
+
 .task-input button {
-  padding: 10px;
+  border: none;
   background-color: #6200ea;
   color: white;
-  border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+  padding: 10px;
 }
 
 .task-input button:hover {
   background-color: #5a00d1;
+  transform: scale(1.05); /* Added subtle zoom effect on hover */
 }
+
 
 .todo-list {
   list-style-type: none;

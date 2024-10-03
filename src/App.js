@@ -3,6 +3,7 @@ import TodoList from "./Components/TodoList";
 import Header from "./Components/Header";
 import TaskInput from "./Components/TaskInput";
 import './App.css';
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -47,15 +48,24 @@ const App = () => {
   };
 
   return (
-    <div className="app">
+    <div>
+      <div>
       <Header setFilter={setFilter} setSearchQuery={setSearchQuery} />
+      </div>
+      <div className="app">
       <TaskInput addTask={addTask} />
+      </div>
+      <div>
       <TodoList
         tasks={filterTasks()}
         deleteTask={deleteTask}
         toggleComplete={toggleComplete}
         editTask={editTask}
       />
+      </div>
+      <div>
+      <Footer />
+    </div>
     </div>
   );
 };

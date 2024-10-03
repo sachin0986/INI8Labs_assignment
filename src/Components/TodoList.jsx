@@ -1,6 +1,6 @@
 import React from "react";
 import TodoItems from "./TodoItems";
-import "./CSS/TodoList.css";
+
 const TodoList = ({ tasks, deleteTask, toggleComplete, editTask }) => {
   return (
     <ul className="todo-list">
@@ -15,7 +15,7 @@ const TodoList = ({ tasks, deleteTask, toggleComplete, editTask }) => {
           />
         ))
       ) : (
-        <p>No tasks found</p>
+        <p className="no-tasks-message">Currently No tasks Addes.</p>
       )}
     </ul>
   );
