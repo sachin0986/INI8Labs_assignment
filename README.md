@@ -1,3 +1,12 @@
+**Steps to run it locally** 
+
+1. Clone the GitHub Repository by command - git clone https://github.com/sachin0986/INI8Labs_assignment.git
+2. cd ini8labs_assignment folder
+3. npm install or npm i 
+4. npm install react-icons or npm i react-icons
+5. npm start
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
