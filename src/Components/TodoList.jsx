@@ -15,7 +15,7 @@ const TodoList = ({ tasks, deleteTask, toggleComplete, editTask }) => {
           />
         ))
       ) : (
-        <p className="no-tasks-message">Currently No tasks Addes.</p>
+        <p className="no-tasks-message">Currently No tasks Added.</p>
       )}
     </ul>
   );

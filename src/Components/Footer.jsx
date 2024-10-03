@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer_Left">
-        <a href={GITHUB_URL} className="Logo" target="_blank" rel="noopener noreferrer">
+        <a href={GITHUB_URL} className="Logo" target="_blank">
           <RiGithubLine size={40} />
         </a>
-        <a href={LINKEDIN_URL} className="Logo" target="_blank" rel="noopener noreferrer">
+        <a href={LINKEDIN_URL} className="Logo" target="_blank">
           <FaLinkedin size={40} />
         </a>
       </div>
